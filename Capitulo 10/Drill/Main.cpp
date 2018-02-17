@@ -10,25 +10,7 @@ struct Point
 	int iX;
 	int iY;
 };
-istream& operator>>(istream& is, Point& r) 
-{
-char ch1;          
-if (is >> ch1 && ch1 != '(') {   
-	// could it be a Reading?                   
-	is.unget();                 
-	is.clear(ios_base::failbit);              
-	return is;          }
-	char ch2;        
-	int d;      
-	int h;       
-	double t;     
-	is >> d >> h >> t >> ch2;   
-	if (!is || ch2 != ')') cout << ("bad reading");
-	// messed-up reading         
-	r.iX = d;         
-	r.iY = h;               
-	return is; 
-}
+
 
 int main()
 {
@@ -75,11 +57,9 @@ int main()
 
 	while (!Archivo2.eof())
 	{
-		string temp;
 		for (int i = 0; i < 7; i++)
 		{
-			std::getline (Archivo2, temp);
-			processed_points[i].iX = 2GFA;
+			Archivo2, processed_points[i].iX;
 			Archivo2, processed_points[i].iY;
 		}
 	}
