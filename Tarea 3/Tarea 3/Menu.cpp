@@ -10,8 +10,10 @@ int main()
 {
 	string *Palabras = new string[256];
 	string Palabras2;
+	int i, j, iAux;
+	string sAux;
 
-	list<string> *ListaAnagramas;
+	list<string> *ListaAnagramas = new list<string>[13];
 
 	ifstream Archivo;
 
@@ -32,7 +34,23 @@ int main()
 
 	}
 
+	for (i = 0; i < 14; i++)
+	{
+		for (j = 0; j < 13; j++)
+		{
+			if (Palabras[j] > Palabras[j + 1])
+			{
+				sAux = Palabras[j];
+				Palabras[j] = Palabras[j + 1];
+				Palabras[j + 1] = sAux;
+			}
+		}
+	}
 
+	for (i = 0; i < 13; i++)
+	{
+		cout << Palabras[i] << "\n";
+	}
 
 	Archivo.close();
 

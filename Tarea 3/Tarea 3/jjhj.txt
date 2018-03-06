@@ -1,0 +1,21 @@
+roma <-- Palabras[0]
+ancestro <-- Palabras[1]
+paris <-- Palabras[2]
+omar <-- Palabras[3]
+cortasen <-- Palabras[4]
+pisar <-- Palabras[5]
+amor <-- Palabras[6]
+cartones <-- Palabras[7]
+mora <-- Palabras[8]
+cantores <-- Palabras[9]
+piras <-- Palabras[10]
+ramo <-- Palabras[11]
+prisa <-- Palabras[12]
+armo <-- Palabras[13]
+
+roma	ancestro	paris
+omar	cortasen	piras
+amor	cartones	prisa
+mora	cantores	pisar
+ramo
+armo
