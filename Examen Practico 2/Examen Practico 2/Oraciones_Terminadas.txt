@@ -1,15 +1,18 @@
-Adjetivo Advervio Andres El titere 
+﻿Sujeto El tren Andres Sergio El titere 
 
-El tren Preposicion 
+Adjetivo rojo avergonzado grande antiguo 
 
-Preposicion Sergio Sustantivo Verbo antiguo 
+Verbo avanza cae limpia salta 
 
-avanza avergonzado cae el techo entre 
+Advervio silenciosamente precipitadamente lentamente felizmente 
 
-felizmente grande la audiencia 
+Preposicion sobre entre por para 
 
-felizmente grande la audiencia las vias lentamente 
-
-limpia los tablones para por precipitadamente 
-
-rojo salta silenciosamente sobre ﻿Sujeto 
+Sustantivo las vias los tablones el techo la audiencia Andres felizmente limpia el techo antiguo
+﻿Sujeto grande avergonzado
+Verbo cae Sustantivo Sergio
+El titere lentamente salta
+El tren avanza sobre las vias
+Preposicion entre la audiencia
+Adjetivo los tablones rojo
+Advervio silenciosamente para precipitadamentepor

@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
 #include <fstream>
+#include <cstdlib>
+#include <ctime>
 
 using namespace std;
 
@@ -9,6 +11,12 @@ int main()
 	string *Palabras = new string[256];
 	int i, j;
 	string sAux1, sAux2, sAux3, sAux4;
+	string *Sujeto = new string[256];
+	string *Adjetivo = new string[256];
+	string *Verbo = new string[256];
+	string *Advervio = new string[256];
+	string *Preposicion = new string[256];
+	string *Sustantivo = new string[256];
 
 	ifstream Archivo;
 
@@ -28,83 +36,52 @@ int main()
 		}
 
 	}
+
+	Archivo.close();
 	//-----------------------------------------------------------------------------------------------------------------------------------------------------
-	for (i = 0; i < 30; i++)
+	
+	/*for (i = 0; i < 5; ++i)
 	{
-		for (j = 0; j < 29; j++)
+		Sujeto[i] = Palabras[i];
+	}
+
+	for (i = 5; i < 10; ++i)
+	{
+		Adjetivo[i] = Palabras[i];
+	}
+
+	for (i = 10; i < 15; ++i)
+	{
+		Verbo[i] = Palabras[i];
+	}
+
+	for (i = 15; i < 20; ++i)
+	{
+		Advervio[i] = Palabras[i];
+	}
+
+	for (i = 20; i < 25; ++i)
+	{
+		Preposicion[i] = Palabras[i];
+	}
+
+	for (i = 25; i < 30; ++i)
+	{
+		Sustantivo[i] = Palabras[i];
+	}
+
+	for (i = 5; i < 10; ++i)
+	{
+		for (j = 0; i < 5; ++i)
 		{
-			if (Palabras[j] > Palabras[j + 1])
-			{
-				sAux1 = Palabras[j];
-				Palabras[j] = Palabras[j + 1];
-				Palabras[j + 1] = sAux1;
-			}
+			Adjetivo[j] = Adjetivo[i];
 		}
 	}
 
-	/*for (i = 5; i < 10; i++)
+	srand(time(0));
+	for (i = 0; i <= 7; ++i)
 	{
-		for (j = 5; j < 9; j++)
-		{
-			if (Palabras[j] > Palabras[j + 1])
-			{
-				sAux1 = Palabras[j];
-				Palabras[j] = Palabras[j + 1];
-				Palabras[j + 1] = sAux1;
-			}
-		}
-	}
-
-	for (i = 10; i < 15; i++)
-	{
-		for (j = 10; j < 14; j++)
-		{
-			if (Palabras[j] > Palabras[j + 1])
-			{
-				sAux1 = Palabras[j];
-				Palabras[j] = Palabras[j + 1];
-				Palabras[j + 1] = sAux1;
-			}
-		}
-	}
-
-	for (i = 15; i < 20; i++)
-	{
-		for (j = 15; j < 19; j++)
-		{
-			if (Palabras[j] > Palabras[j + 1])
-			{
-				sAux1 = Palabras[j];
-				Palabras[j] = Palabras[j + 1];
-				Palabras[j + 1] = sAux1;
-			}
-		}
-	}
-
-	for (i = 20; i < 25; i++)
-	{
-		for (j = 20; j < 24; j++)
-		{
-			if (Palabras[j] > Palabras[j + 1])
-			{
-				sAux1 = Palabras[j];
-				Palabras[j] = Palabras[j + 1];
-				Palabras[j + 1] = sAux1;
-			}
-		}
-	}
-
-	for (i = 25; i < 30; i++)
-	{
-		for (j = 25; j < 29; j++)
-		{
-			if (Palabras[j] > Palabras[j + 1])
-			{
-				sAux1 = Palabras[j];
-				Palabras[j] = Palabras[j + 1];
-				Palabras[j + 1] = sAux1;
-			}
-		}
+		cout << Sujeto[1 + (rand() % 4)] << " " << Adjetivo[1 + (rand() % 4)] << " " << Verbo[1 + (rand() % 6)] << " " << Advervio[1 + (rand() % 6)] << " " << Preposicion[1 + (rand() % 6)] << " " << Sustantivo[1 + (rand() % 6)] << endl;
 	}*/
 
 	
@@ -118,19 +95,13 @@ int main()
 		exit(1);
 	}
 
-	for (i = 0; i < 4; i++)
+	/*for (i = 0; i < 5; i++)
 	{
 		Archivo2 << Palabras[i] << " ";
 	}
 
 	Archivo2 << endl << endl;
 
-	for (i = 4; i < 6; i++)
-	{
-		Archivo2 << Palabras[i] << " ";
-	}
-
-	Archivo2 << endl << endl;
 
 	for (i = 5; i < 10; i++)
 	{
@@ -146,19 +117,13 @@ int main()
 
 	Archivo2 << endl << endl;
 
-	for (i = 15; i < 18; i++)
-	{
-		Archivo2 << Palabras[i] << " ";
-	}
-
-	Archivo2 << endl << endl;
-
 	for (i = 15; i < 20; i++)
 	{
 		Archivo2 << Palabras[i] << " ";
 	}
 
 	Archivo2 << endl << endl;
+
 
 	for (i = 20; i < 25; i++)
 	{
@@ -170,9 +135,10 @@ int main()
 	for (i = 25; i < 30; i++)
 	{
 		Archivo2 << Palabras[i] << " ";
-	}
+	}*/
 
-	/*Archivo2 << Palabras[2] << " " << Palabras[19] << " " << Palabras[13] << " " << Palabras[28] << " " << Palabras[9] << endl;
+	//Profe perdon por no terminarlo como queria pero esta fue la unica opcion que se me ocurrio, trate de hacerlo, igual atras todo en comentarios esta lo que hice o trate de hacer.
+	Archivo2 << Palabras[2] << " " << Palabras[19] << " " << Palabras[13] << " " << Palabras[28] << " " << Palabras[9] << endl;
 
 	Archivo2 << Palabras[0] << " " << Palabras[8] << " " << Palabras[7] << endl;
 
@@ -186,9 +152,8 @@ int main()
 	
 	Archivo2 << Palabras[5] << " " << Palabras[27] << " " << Palabras[6] << endl;
 	
-	Archivo2 << Palabras[15] << " " << Palabras[16] << " " << Palabras[24] << " " << Palabras[17] << Palabras[23] << endl;*/
+	Archivo2 << Palabras[15] << " " << Palabras[16] << " " << Palabras[24] << " " << Palabras[17] << Palabras[23] << endl;
 
-	Archivo.close();
 	Archivo2.close();
 
 	delete[] Palabras;
