@@ -29,9 +29,9 @@ int main()
 
 	}
 	//-----------------------------------------------------------------------------------------------------------------------------------------------------
-	/*for (i = 0; i < 5; i++)
+	for (i = 0; i < 30; i++)
 	{
-		for (j = 0; j < 4; j++)
+		for (j = 0; j < 29; j++)
 		{
 			if (Palabras[j] > Palabras[j + 1])
 			{
@@ -42,7 +42,7 @@ int main()
 		}
 	}
 
-	for (i = 5; i < 10; i++)
+	/*for (i = 5; i < 10; i++)
 	{
 		for (j = 5; j < 9; j++)
 		{
@@ -118,7 +118,14 @@ int main()
 		exit(1);
 	}
 
-	/*for (i = 0; i < 5; i++)
+	for (i = 0; i < 4; i++)
+	{
+		Archivo2 << Palabras[i] << " ";
+	}
+
+	Archivo2 << endl << endl;
+
+	for (i = 4; i < 6; i++)
 	{
 		Archivo2 << Palabras[i] << " ";
 	}
@@ -133,6 +140,13 @@ int main()
 	Archivo2 << endl << endl;
 
 	for (i = 10; i < 15; i++)
+	{
+		Archivo2 << Palabras[i] << " ";
+	}
+
+	Archivo2 << endl << endl;
+
+	for (i = 15; i < 18; i++)
 	{
 		Archivo2 << Palabras[i] << " ";
 	}
@@ -156,9 +170,9 @@ int main()
 	for (i = 25; i < 30; i++)
 	{
 		Archivo2 << Palabras[i] << " ";
-	}*/
+	}
 
-	Archivo2 << Palabras[2] << " " << Palabras[19] << " " << Palabras[13] << " " << Palabras[28] << " " << Palabras[9] << endl;
+	/*Archivo2 << Palabras[2] << " " << Palabras[19] << " " << Palabras[13] << " " << Palabras[28] << " " << Palabras[9] << endl;
 
 	Archivo2 << Palabras[0] << " " << Palabras[8] << " " << Palabras[7] << endl;
 
@@ -172,7 +186,7 @@ int main()
 	
 	Archivo2 << Palabras[5] << " " << Palabras[27] << " " << Palabras[6] << endl;
 	
-	Archivo2 << Palabras[15] << " " << Palabras[16] << " " << Palabras[24] << " " << Palabras[17] << Palabras[23] << endl;
+	Archivo2 << Palabras[15] << " " << Palabras[16] << " " << Palabras[24] << " " << Palabras[17] << Palabras[23] << endl;*/
 
 	Archivo.close();
 	Archivo2.close();
