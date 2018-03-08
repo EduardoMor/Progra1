@@ -32,7 +32,7 @@ int main()
 	{
 		for (int i = 0; i <= 30; ++i)
 		{
-			getline(Archivo, Palabras[i], '\n');
+			getline(Archivo, Palabras[i]);
 		}
 
 	}
@@ -40,51 +40,46 @@ int main()
 	Archivo.close();
 	//-----------------------------------------------------------------------------------------------------------------------------------------------------
 	
-	/*for (i = 0; i < 5; ++i)
+	for (i = 0; i < 5; ++i)
 	{
 		Sujeto[i] = Palabras[i];
 	}
 
+	j = 0;
 	for (i = 5; i < 10; ++i)
 	{
-		Adjetivo[i] = Palabras[i];
+		Adjetivo[j] = Palabras[i];
+		j++;
 	}
 
+	j = 0;
 	for (i = 10; i < 15; ++i)
 	{
-		Verbo[i] = Palabras[i];
+		Verbo[j] = Palabras[i];
+		j++;
 	}
 
+	j = 0;
 	for (i = 15; i < 20; ++i)
 	{
-		Advervio[i] = Palabras[i];
+		Advervio[j] = Palabras[i];
+		j++;
 	}
 
+	j = 0;
 	for (i = 20; i < 25; ++i)
 	{
-		Preposicion[i] = Palabras[i];
+		Preposicion[j] = Palabras[i];
+		j++;
 	}
 
+	j = 0;
 	for (i = 25; i < 30; ++i)
 	{
-		Sustantivo[i] = Palabras[i];
+		Sustantivo[j] = Palabras[i];
+		j++;
 	}
 
-	for (i = 5; i < 10; ++i)
-	{
-		for (j = 0; i < 5; ++i)
-		{
-			Adjetivo[j] = Adjetivo[i];
-		}
-	}
-
-	srand(time(0));
-	for (i = 0; i <= 7; ++i)
-	{
-		cout << Sujeto[1 + (rand() % 4)] << " " << Adjetivo[1 + (rand() % 4)] << " " << Verbo[1 + (rand() % 6)] << " " << Advervio[1 + (rand() % 6)] << " " << Preposicion[1 + (rand() % 6)] << " " << Sustantivo[1 + (rand() % 6)] << endl;
-	}*/
-
-	
 	ofstream Archivo2;
 
 	Archivo2.open("Oraciones_Terminadas.txt", ios::out);
@@ -95,69 +90,18 @@ int main()
 		exit(1);
 	}
 
-	/*for (i = 0; i < 5; i++)
+	srand(time(0));
+	for (i = 0; i <= 7; ++i)
 	{
-		Archivo2 << Palabras[i] << " ";
+		Archivo2 << Sujeto[(rand() % 5)] << " " << Adjetivo[(rand() % 5)] << " " << Verbo[(rand() % 5)] << " " << Advervio[(rand() % 5)] << " " << Preposicion[(rand() % 5)] << " " << Sustantivo[(rand() % 5)] << endl;
 	}
-
-	Archivo2 << endl << endl;
-
-
-	for (i = 5; i < 10; i++)
-	{
-		Archivo2 << Palabras[i] << " ";
-	}
-
-	Archivo2 << endl << endl;
-
-	for (i = 10; i < 15; i++)
-	{
-		Archivo2 << Palabras[i] << " ";
-	}
-
-	Archivo2 << endl << endl;
-
-	for (i = 15; i < 20; i++)
-	{
-		Archivo2 << Palabras[i] << " ";
-	}
-
-	Archivo2 << endl << endl;
-
-
-	for (i = 20; i < 25; i++)
-	{
-		Archivo2 << Palabras[i] << " ";
-	}
-
-	Archivo2 << endl << endl;
-
-	for (i = 25; i < 30; i++)
-	{
-		Archivo2 << Palabras[i] << " ";
-	}*/
-
-	//Profe perdon por no terminarlo como queria pero esta fue la unica opcion que se me ocurrio, trate de hacerlo, igual atras todo en comentarios esta lo que hice o trate de hacer.
-	Archivo2 << Palabras[2] << " " << Palabras[19] << " " << Palabras[13] << " " << Palabras[28] << " " << Palabras[9] << endl;
-
-	Archivo2 << Palabras[0] << " " << Palabras[8] << " " << Palabras[7] << endl;
-
-	Archivo2 << Palabras[10] << " " << Palabras[12] << " " << Palabras[25] << " " << Palabras[3] << endl;
-	
-	Archivo2 << Palabras[4] << " " << Palabras[18] << " " << Palabras[14] << endl;
-	
-	Archivo2 << Palabras[1] << " " << Palabras[11] << " " << Palabras[21] << " " << Palabras[26] << endl;
-	
-	Archivo2 << Palabras[20] << " " << Palabras[22] << " " << Palabras[29] << endl;
-	
-	Archivo2 << Palabras[5] << " " << Palabras[27] << " " << Palabras[6] << endl;
-	
-	Archivo2 << Palabras[15] << " " << Palabras[16] << " " << Palabras[24] << " " << Palabras[17] << Palabras[23] << endl;
 
 	Archivo2.close();
 
-	delete[] Palabras;
+	delete[] Palabras, Adjetivo, Sustantivo, Sujeto, Verbo, Preposicion, Advervio;
 	cin.ignore();
 	cin.get();
 	return 0;
+
+	//Profe ya lo termine se que fue despues pero quize terminar el programa por gusto personal.
 }
